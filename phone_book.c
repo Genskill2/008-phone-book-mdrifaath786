@@ -273,6 +273,7 @@ int delete(FILE *db_file, char *name)
     return deleted;
 }
 
+
 int search(FILE *db_file, char *name)
 {
     entry *p = load_entries(db_file);
@@ -292,4 +293,5 @@ int search(FILE *db_file, char *name)
 
     free_entries(base);
     return search;
+
 }
